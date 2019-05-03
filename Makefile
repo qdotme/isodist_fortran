@@ -5,13 +5,14 @@ SHELL = /bin/sh
 PGM = isodist
 
 LOCDIR = ./
-SRC = $(wildcard $(LOCDIR)*.f)
-OBJ = $(addsuffix .o, $(basename $(notdir $(SRC))))
+SRC = $(wildcard $(LOCDIR)*.f) $(wildcard $(LOCDIR)sample_data/*.f) $(wildcard $(LOCDIR)sample_input_files/*.f) 
+OBJ = $(addsuffix .o, $(basename $(SRC)))
+#OBJ += 
 #JMT- FC = g77
 FC = gfortran
 
 #JMT- FFLAGS = -O3
-FFLAGS = -O3 -ffixed-line-length-none
+FFLAGS = -O3 -ffixed-line-length-none -I.
 
 $(PGM): $(OBJ) 
 	$(FC) $(FFLAGS) $(OBJ) -o $(PGM)
@@ -24,7 +25,7 @@ install:
 	cp isodist /usr/local/bin
 
 clean:   
-	rm isodist
-	rm *.o
+	-rm isodist
+	-rm *.o */*.o
 
 
