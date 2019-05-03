@@ -1,0 +1,33 @@
+Platform: pc41.lcp.u-psud.fr
+Mon Apr  3 11:14:38 CEST 2017
+Commande utilisee /home/teuler/bin/jmMake
+gfortran -O3 -ffixed-line-length-none  -c -o isodist.o isodist.f
+isodist.f:226.24:
+
+        write(4,611)(mz(mz_ptr(i))+mz_hd,eft_obs(mz_ptr(i)),i=1,nmz)
+                        1
+Warning: Extension: REAL array index at (1)
+isodist.f:226.49:
+
+        write(4,611)(mz(mz_ptr(i))+mz_hd,eft_obs(mz_ptr(i)),i=1,nmz)
+                                                 1
+Warning: Extension: REAL array index at (1)
+gfortran -O3 -ffixed-line-length-none  -c -o iso_ft.o iso_ft.f
+gfortran -O3 -ffixed-line-length-none  -c -o lmdif1.o lmdif1.f
+gfortran -O3 -ffixed-line-length-none  -c -o lmdif_minpack.o lmdif_minpack.f
+gfortran -O3 -ffixed-line-length-none  -c -o marq_lmdif1.o marq_lmdif1.f
+gfortran -O3 -ffixed-line-length-none  -c -o match_atom.o match_atom.f
+gfortran -O3 -ffixed-line-length-none  -c -o match_residue.o match_residue.f
+gfortran -O3 -ffixed-line-length-none  -c -o model_header.o model_header.f
+gfortran -O3 -ffixed-line-length-none  -c -o model_params.o model_params.f
+gfortran -O3 -ffixed-line-length-none  -c -o pep_mw.o pep_mw.f
+gfortran -O3 -ffixed-line-length-none  -c -o plotxy_range.o plotxy_range.f
+gfortran -O3 -ffixed-line-length-none  -c -o read_dino.o read_dino.f
+gfortran -O3 -ffixed-line-length-none  -c -o res_min.o res_min.f
+gfortran -O3 -ffixed-line-length-none  -c -o rfft_fftpack5.o rfft_fftpack5.f
+gfortran -O3 -ffixed-line-length-none  -c -o setup_atoms.o setup_atoms.f
+gfortran -O3 -ffixed-line-length-none  -c -o setup_model.o setup_model.f
+gfortran -O3 -ffixed-line-length-none  -c -o setup_residues.o setup_residues.f
+gfortran -O3 -ffixed-line-length-none  -c -o sort_napack.o sort_napack.f
+gfortran -O3 -ffixed-line-length-none  -c -o write_model.o write_model.f
+gfortran -O3 -ffixed-line-length-none auto_baseline.o bogus_ft.o calc_atoms.o calc_iso_dist.o calc_model.o calc_residues.o calc_species.o ff_io_lib.o fit_sched.o init_c.o isodist.o iso_ft.o lmdif1.o lmdif_minpack.o marq_lmdif1.o match_atom.o match_residue.o model_header.o model_params.o pep_mw.o plotxy_range.o read_dino.o res_min.o rfft_fftpack5.o setup_atoms.o setup_model.o setup_residues.o sort_napack.o write_model.o -o isodist

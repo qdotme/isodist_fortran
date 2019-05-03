@@ -1,0 +1,43 @@
+isodist Copyright 2008 James R. Williamson and Michael T. Sykes
+
+Contact via the Web:
+--------------------
+http://williamson.scripps.edu/
+
+isodist Webpage:
+----------------
+http://williamson.scripps.edu/isodist/
+
+License:
+--------
+isodist is offered under the GNU General Public License (GPL)
+http://www.gnu.org/licenses/gpl.html
+
+Warranty Disclaimer: 
+--------------------
+The software is provided "as is" without warranty of any kind, express or 
+implied, including but not limited to the warranties of merchantability, 
+fitness for a particular purpose and noninfringement. In no event shall 
+the authors or copyright holders be liable for any claim, damages or 
+other liability, whether in an action of contract, tort or otherwise, 
+arising from, out of or in connection with the software or the use or 
+other dealings in the software.
+
+Please cite the following paper when referencing isodist:
+---------------------------------------------------------
+Edit Sperling, Anne Bunner, Michael T. Sykes and James R. Williamson. 
+Quantitative Analysis of Isotope Distributions in Proteomic Mass Spectrometry 
+Using Least-Squares Fourier Transform Convolution. Analytical Chemistry, XX, 
+pp. 0000-1111 (2008). (in press)
+
+Installation:
+-------------
+Briefly:
+
+(From within src/ directory)
+make
+sudo make install
+
+You may need to edit the Makefile to specify the appropriate Fortran77 compiler 
+Slightly more detailed instructions are available at:
+http://williamson.scripps.edu/isodist/download.shtml
